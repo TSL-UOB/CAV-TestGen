@@ -97,6 +97,62 @@ Verification, Test Generation, Autonomous Vehicles, Simulation, Testing
 \end{figure}
 
 
+% ***************************************************
+%  INTRODUCTION - A Good Test Case
+% ***************************************************
+
+\subsection{A Good Test Case} \label{s:A Good Test Case}
+
+What is considered a good test for an autonomous system? Are some methods better suited than others and will this depend on the application or context?
+
+The following criteria for a ’good’ test case, which are inspired by [M. Fewster and D. Graham, Software test automation. Addison-Wesley Reading, 1999]: effectiveness in detecting failures, efficiency in minimising the number if tests required to achieve verification goals, economy in terms of resource usage and also robustness towards changes. 
+
+In addition to this list our own thoughts on good tests are around: effectively generating coverage, maximising the entropy between test cases (similarity measure), have test cases that relate to national or international standards appropriate for the autonomous system (if available), be automated or have the ability to integrate within a testbench or testing pipeline with limited overhead, and have a high bug discovery rate.
+
+
+% ***************************************************
+%  Case Study
+% ***************************************************
+\section{Case Study}\label{s:Case Study}
+
+How do we demonstrate if a method generates a `good' test case based on the requirements above? Can we also demonstrate the maturity of each method? Which methods can we rigorously and quantitatively assess?
+
+Firstly which methods can we consider:
+\newline - A random technique is good as it provides a baseline to reference other methods against.
+\newline - Static test case (using GUI builder)
+\newline - Dynamic test case (using game)
+\newline - Algorithmic or agent based approach (Could we get this agent to adapt to the user's driving?)
+
+
+% ***************************************************
+%  Case Study - Data Gathering
+% ***************************************************
+\section{Data Gathering}\label{s:Data Gathering}
+
+
+Participants are presented with 5 different driving objectives over 50 scenarios. In each scenario the user will have to achieve one of the 5 objectives but with a different test method each time. Therefore we use each method 10 times against the 5 objectives.
+
+Participants control a vehicle in the simulation and aim to replicate the actions of an autonomous driving system. The list of 50 scenarios are presented randomly to minimise user learning. The objective is presented to the user at the start of each scenario. The actions of the actors within the environment are controlled by one of the 5 methods. Simulation logs are recorded noting the scenario number and the method used.
+
+
+% ***************************************************
+%  Case Study - Data Analysis
+% ***************************************************
+\section{Data Analysis}\label{s:Data Analysis}
+
+Simulation logs are analysed against the criteria of a `good' test case.
+
+
+% ***************************************************
+%  Case Study - Results
+% ***************************************************
+\section{Results}\label{s:Results}
+
+The results are summarised in Table 1.
+
+
+
+
 
 % ***************************************************
 %  CONCLUSION
